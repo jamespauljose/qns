@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    
+    }
+    body{
+        background-color: black;
+    }
+    p{
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand" href="#">Question no 9</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger"><a class="navbar-brand" href="/index.html">Home</a>
+        
+    </nav>
+    </nav>
+
+    <div class="container">
+
+        <p id="1"></p>
+
+        <button class="btn btn-primary" onclick=pattern();>Run</button><br><br>
+        <button class="btn btn-primary"  onclick="document.location.href='/p9.html'"> clear</button>
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    function pattern(){
+        var j="Javascript";
+        l=j.length; var k="";
+        for(i=0;i<l;i++){
+            k=k+j[i];
+            document.getElementById("1").innerHTML=document.getElementById("1").innerHTML+k+"<br>";
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>

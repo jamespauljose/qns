@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    
+    }
+    body{
+        background-color: black;
+    }
+    p{
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand" href="#">Question no 7</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger"><a class="navbar-brand" href="/index.html">Home</a>
+        
+    </nav>
+    </nav>
+
+    <div class="container">
+
+
+        <p id="1">Enter two numbers</p>
+        <input type="number"class="border border-primary" onfocus="this.value=''" id="input"placeholder="Enter two Numbers"]/>
+        <button class="btn btn-primary border border-primary"onclick=accept();>ENTER</button>
+        <button class="btn btn-primary"onclick=display();>View Inputs</button>
+        <button class="btn btn-primary"onclick=large();>Large</button><br><br>
+        <p id="2"></p>
+        <p id="3"></p>
+        <button class="btn btn-primary"  onclick="document.location.href='/p7.html'">clear</button>
+    </div>
+
+
+    <script>
+        var a=[];
+        function accept(){
+            var input=document.getElementById("input").value;
+            if(input!=""){
+                a.push(input);
+            }
+        }
+        function display(){
+            if(a!=""){
+                var k="";
+                for(var i=0;i<a.length;i++){
+                    k=k+a[i]+"</br>";
+                }
+                document.getElementById("2").innerHTML=k
+            }
+            else{
+                alert("Please Enter elements into the array");
+            }
+        }
+        function large(){
+            if(a!=""){
+                if(a[0]>a[1]){
+                    document.getElementById("3").innerHTML=a[0]+" is larger than "+a[1];
+                }
+                else{
+                    document.getElementById("3").innerHTML=a[1]+" is larger than "+a[0];
+                }
+            }
+            else{
+                alert("Enter the numbers - Max input 2 numbers");
+            }
+        }
+            
+    </script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
